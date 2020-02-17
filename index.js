@@ -22,13 +22,13 @@
 
 
 function myFunction() {
-    const x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  };
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
   const modal = document.getElementById("myModal");
   const btn = document.querySelector("#muze");
   const span = document.getElementsByClassName("close")[0];
