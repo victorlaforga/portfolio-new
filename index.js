@@ -1,3 +1,26 @@
+// $(document).ready(function() {
+//   //responsive menu toggle
+//   $("#menutoggle").click(function() {
+//     $('.xs-menu').toggleClass('displaynone');
+
+//     });
+//   //add active class on menu
+//   $('ul li').click(function(e) {
+//     e.preventDefault();
+//     $('li').removeClass('active');
+//     $(this).addClass('active');
+//   });
+// //drop down menu	
+//     $(".drop-down").hover(function() {
+//       $('.mega-menu').addClass('display-on');
+//     });
+//     $(".drop-down").mouseleave(function() {
+//       $('.mega-menu').removeClass('display-on');
+//     });
+
+// });
+
+
 function myFunction() {
     const x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,30 +30,44 @@ function myFunction() {
     }
   };
   const modal = document.getElementById("myModal");
-
-  // Get the button that opens the modal
   const btn = document.querySelector("#muze");
-  
-  // Get the <span> element that closes the modal
   const span = document.getElementsByClassName("close")[0];
   
-  // When the user clicks the button, open the modal 
   function openModal() {
     modal.style.display = "block";
-    console.log("test")
   }
   btn.addEventListener("click", openModal);
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
+  function displayModal() {
     modal.style.display = "none";
   }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
+  span.addEventListener("click" ,displayModal)
+  function closeModal(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
+  window.addEventListener("click", closeModal);
+
+  const modal2 = document.getElementById("myModal2");
+  const btn2 = document.querySelector("#nibud");
+  const span2 = document.getElementsByClassName("close")[1];
+  
+  function openModal2() {
+    modal2.style.display = "block";
+  }
+  btn2.addEventListener("click", openModal2);
+  function displayModal2() {
+    modal2.style.display = "none";
+  }
+  span2.addEventListener("click" ,displayModal2)
+  function closeModal2(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+  window.addEventListener("click", closeModal2);
+
+
 const $element=$('.each-event, .title');
 const $window = $(window);
 $window.on('scroll resize', check_for_fade);
@@ -51,3 +88,4 @@ function check_for_fade() {
  
     });
 };
+

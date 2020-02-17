@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"></link>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.scss"></link>
     <link rel="stylesheet" type="text/css" href="animation.css"></link>
     <link rel="stylesheet" type="text/css" href="index.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     
     <title>Victor Laforga</title>
 </head>
 <body>
-  <div class="topnav" id="myTopnav">
+  <div class="topnavMenu" id="myTopnavMenu">
     <a href="#home" class="active">Home</a>
-    <a id="buttonMe">Me</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#mywork">My work</a>
+    <a href="#news">Me</a>
+    <a href="#contact">Timeline</a>
+    <a href="#about">My work</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars" id="bars"></i>
+      <i class="fa fa-bars"></i>
     </a>
   </div>
+  
+  
+  
         <div class="home">
       
             <h1 class="text_1">Victor <br class="brTitel"> Laforga</h1>
@@ -140,7 +144,7 @@
                       
                       <div class="each-event">
                         <div class="event-description">
-                            <p>A 10 week front-end developer internship at <a href="https://glue.group/">Glue</a> 💻 <hr/>
+                            <p>A 10 week front-end developer internship at <a target="_blank" href="https://glue.group/">Glue</a> 💻 <hr/>
                               
                               <strong> 18/04/2019 - 27/06/2019 </strong> </p>
                         </div>
@@ -215,6 +219,40 @@
                         </div>
                       
                       </div>
+                      <div id="myModal2" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Nibud BudgetHuis</h2>
+                            <div class="containerModal">
+                            <div class="leftSideModal">
+                              <img id="nibudgif" src="./images/Modal img/nibudgif.gif" alt="">
+                              <a target="_blank" href="https://github.com/victorlaforga/nibud-budgethuis">Github Link (Demo)</a>
+                            </div>
+                            <div class="rightSideModal">
+                                <ul id="nibudInfo" class='info-list'>
+                  
+                                    <li>
+                                      <strong>What is Nibud? </strong> <br>
+                                      <span>THet BudgetHuis is a tool designed for the Nationaal Instituut voor Budgetvoorlichting for users with money problems, they can get inisghts of their costs in a playful way, then they also have the ability to get tips about the costs in which they score poorly. Eventually, the user can also get professional help from a budget coach.</span>
+                                    </li>
+                                
+                                    <li>
+                                      <strong>Type of project</strong> <br>
+                                      <span> <span>This was a group project in my 3rd study year. I made this application with 2 other designers. I was the only developer.</span>
+                                      </span>
+                                    </li>
+                                
+                                    <li>
+                                      <strong>Build with </strong> <br>
+                                      <span>HTML, CSS & Javascript</span>
+                                    </li>
+                                    </ul>
+                              
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
                   <div id="muze"
                  class="projectElement">
                   <div class="image">
@@ -232,9 +270,9 @@
             <p>#MongoDB</p>
             </div>
                   </div>
-                  <div class="projectElement">
+                  <div id="nibud" class="projectElement">
                   <div class="image">
-                    <img src="images/dating-app.png" alt=""/>
+                    <img src="images/Modal img/nibud mockup.png" alt=""/>
                     </div>
                     <div class="info">
                     <h2>Nibud Budgethuis</h2>
@@ -242,41 +280,41 @@
                     <div class="tags">
             <p>#Interactive</p>
             <p>#Javascript</p>
-            <p>#Test</p>
-            <p>#Test</p>
-            <p>#Test</p>
+            <p>#Front-end</p>
+            <p>#ES6</p>
+            
             </div>
                   </div>
                   <div class="projectElement">
                   <div class="image">
-                    <img src="images/kerstbomen.png" alt=""/>
+                    <img src="images/Modal img/kids treasures mockuo.png" alt=""/>
                     </div>
                     <div class="info">
-                    <h2>Groene <br/> Kerst</h2>
+                    <h2>Kids <br>Treasures</h2>
                     </div>
                     <div class="tags">
-                    <p>#HCI</p>
-            <p>#UX/UI</p>
-            <p>#Design</p>
-            <p>#Illustrator</p>
-            <p>#Interaction</p>
+                    <p>#Back-end</p>
+            <p>#BigData</p>
+            <p>#Interactive</p>
+            <p>#SparQL</p>
+            
             </div>
                   </div>
                   <div class="projectElement">
                   <div class="image">
-                    <img src="images/koffieapparaat.png" alt=""/>
+                    <img src="images/Modal img/diner3two mockup.png" alt=""/>
                     </div>
                     <div class="info">
-                    <h2>Maas</h2>
+                    <h2>Diner4Two</h2>
                     
                     </div>
                     <div class="tags">
-                    <p>#UCD</p>
-            <p>#UX/UI</p>
-            <p>#Design</p>
-            <p>#Illustrator</p>
-            <p>#Interaction</p>
-            <p>#User</p>
+                    <p>#Back-end</p>
+            <p>#Data</p>
+            <p>#Node.js</p>
+            <p>#MongoDB</p>
+            <p>#NPM</p>
+            
             </div>
                   </div>
                   <div class="projectElement">
