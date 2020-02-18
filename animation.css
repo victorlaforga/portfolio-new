@@ -272,25 +272,7 @@
     
   }
   
-  .typewriter {
-        font-family: Courier, monospace;
-            display: inline-block;
-    }
-    
-    .typewriter-text {
-        display: inline-block;
-              overflow: hidden;
-             animation: typing 5s steps(13, end), blink 0.75s step-end infinite;
-        white-space: nowrap;
-        font-size: 30px;
-        font-weight: 700;
-        border-right: 4px solid orange;
-        box-sizing: border-box;
-        color: white;
-        margin-top: 25%;
-        letter-spacing: 5px;
-    }
-    
+  
     @keyframes typing {
         from { 
             width: 0% 
@@ -329,38 +311,10 @@
         }
       }
       
-      .text_1 {
-        overflow: hidden;
-        white-space: nowrap;
-        color: white;
-        top: 30%;
-        width: 60%;
-        left: 20%;
-
-        animation: typewriter;
-        
-        display: inline-block;
-        letter-spacing: 16px;
-        position: relative;
-        animation-duration: 15s;
-        animation-timing-function: steps(25, end);
-        animation-iteration-count: 1;
-        font-size: 50px;
-
-
-      }
+      
 
       
-      .text_1::after {
-        content: "|";
-        color: orange;
-        position: absolute;
-        right: 0;
-        animation: caret infinite;
-        animation-duration: 1s;
-        animation-timing-function: steps(1, end);
-      }
-      
+    
       
       .wrapper {
         background-color: white;

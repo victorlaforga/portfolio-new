@@ -15,6 +15,31 @@ body {
 p, a, h2, span, ul, li {
   font-family: 'Raleway', sans-serif;
 }
+
+#containerIntro {
+  display: flex;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 4px solid orange;
+  border-bottom: 15px solid orange;
+  flex-direction: column;
+  width: 70%;
+}
+
+.descriptionVic {
+  overflow: hidden;
+  color: white;
+ 
+  width: 100%;
+  
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+ text-align: left;
+  font-size: 30px;
+
+}
 .nav {
     display: flex;
     flex-direction: row;
@@ -76,21 +101,7 @@ p, a, h2, span, ul, li {
   .showHover {
     visibility: hidden;
   }
-  .descriptionVic {
-    overflow: hidden;
-    color: white;
-    top: 30%;
-    width: fit-content;
-    left: 20%;
-    display: inline-block;
-    letter-spacing: 5px;
-    position: relative;
-    border-right: 4px solid orange;
-    border-bottom: 15px solid orange;
-   text-align: left;
-    font-size: 30px;
   
-  }
   .homelogo {
     position: absolute; 
     top: 40%;
@@ -480,7 +491,7 @@ background-position: left bottom, left bottom, right top, right top, 4px 4px;
     max-height: 40px;
     align-content: center;
   }
-  
+ 
   .brTitel {
     display: none;
   }
@@ -499,10 +510,12 @@ background-position: left bottom, left bottom, right top, right top, 4px 4px;
   
   }
   
-  @media screen and (orientation:portrait) {
-  
-    #warning {
-      display: none;
+  @media only screen and (max-width: 920px ) {
+    br#brtitel {
+      display: block;
+    }
+    .typewriter, .descriptionVic {
+      text-align: center;
     }
   }
   
@@ -513,11 +526,26 @@ background-position: left bottom, left bottom, right top, right top, 4px 4px;
       height: 100vh;
       z-index: 99999;
     }
-    .text_1 {
-      font-size: 85px;
-    }*
-    {margin: 0;
-    padding: 0:;}
+
+    #containerIntro {
+      margin-top: 35%;
+    }
+    div.typewriter-text {
+      font-size: 30px;
+    }
+    .descriptionVic {
+      font-size: 18px;
+    }
+   .myTags p {
+     font-size: large;
+   }
+    div.each-event:nth-child(even), div.each-event:nth-child(odd) {
+      margin: 50px;
+      transition: none;
+    }
+    .each-event.non-focus {
+      display: none;
+    }
     .icon-scroll {
       display: none;
     }
@@ -528,13 +556,14 @@ background-position: left bottom, left bottom, right top, right top, 4px 4px;
       font-size: small;
     }
     p, a, h2, span, ul, li, div, h1{
-      font-size: x-large;
+      font-size: large;
     }
     .description,
     .me {
 width: 100%;
 height: 50%;
-margin: 10px;
+margin: 25px 25px 50px 25px;
+padding: 20px;
 
     }
 
@@ -546,17 +575,11 @@ margin: 10px;
       display: none;
     }
 
-    .text_1, .descriptionVic {
-      
-      justify-content: center;
-     
-    }
+ 
   }
   
   
-  .whiteSide .logo {
-    margin-top: 49%;
-  }
+
   
   .myTags {
   
@@ -680,27 +703,10 @@ margin: 10px;
   }
   
   
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
+ 
   
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+  
+
 
   .icon-scroll,
 .icon-scroll:before{
@@ -824,7 +830,8 @@ margin: 10px;
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: right
+    ;
     display: block;
   }
 }
@@ -836,9 +843,38 @@ margin: 10px;
     right: 0;
     top: 0;
   }
+
+  
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
 }
+
+
+.typewriter {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.typewriter-text {
+  display: inline-block;
+        overflow: hidden;
+       animation: typing 3.5s steps(14, end), blink 0.25s step-end infinite;
+  white-space: nowrap;
+
+  font-weight: 500;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 16px;
+}
+
+#brtitel {
+  display: none;
+}
+
+
