@@ -5,6 +5,7 @@
 	        animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
+
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(150%);
@@ -323,7 +324,7 @@
         height: 100%;
         font: normal 16px/26px Open Sans Condensed, sans-serif;
         color: purple;
-        padding: 100px 20px 200px;
+        
         box-sizing: border-box;
      }
       .block {
@@ -351,7 +352,7 @@
         padding: 15px;
         margin: 60px 20px;
         width: 300px;
-        position: relative;
+        
         border-radius: 4px;
         box-sizing: border-box;
         transition: all 0.3s ease-in-out;
@@ -383,10 +384,11 @@
      }
       .each-event.non-focus {
         color: white;
+        visibility: hidden;
         background: white;
         margin-top: 90px;
         transform: rotateZ(45deg);
-        transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in;
      }
       .each-event.non-focus:before {
         opacity: 0;
