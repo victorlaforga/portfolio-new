@@ -1,5 +1,4 @@
 
-
 function myFunction() {
   const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -89,44 +88,11 @@ function check_for_fade() {
 };
 
 
-function openKids() {
-  window.open("https://github.com/victorlaforga/frontend-data");
-}
-function goToPageOne() {
-  if(window.innerHeight < 750) {
-    window.scrollTo(0,660);
-  } else {
-    window.scrollTo(0,689);
-  }
-  
-  document.getElementById("myTopnav").classList.remove("responsive");
-  console.log("test");
-}
 
-document.getElementById("me").addEventListener("click", goToPageOne);
 
-function goToPagetwo() {
-  if(window.innerHeight < 750) {
-    window.scrollTo(0,2280);
-  } else {
-    window.scrollTo(0,1370);
-  }
-    document.getElementById("myTopnav").classList.remove("responsive");
-    
-    
-  }
-  document.getElementById("timeline").addEventListener("click", goToPagetwo);
 
-function goToPageWork() {
-  if(window.innerHeight < 750) {
-    window.scrollTo(0,3520);
-  } else {
-    window.scrollTo(0,2685);
-  }
-  
-  document.getElementById("myTopnav").classList.remove("responsive");
-  
-}
 
-document.getElementById("work").addEventListener("click", goToPageWork);
+
+
+
 
